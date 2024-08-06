@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install && npx husky add .husky/pre-commit \"npm run lint\"",
     "start": "webpack --config webpack.config.js --watch",
     "dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "json-server": "json-server --watch database.json --port 3000",
-    "lint": "eslint --config eslint.config.js",
-    "prepare": "husky install"
+    "lint": "eslint --config eslint.config.js"
   },
   "author": "Kirill Skakov",
   "license": "ISC",
@@ -17,7 +17,7 @@
     "css-loader": "^7.1.2",
     "eslint": "^9.8.0",
     "eslint-webpack-plugin": "^4.2.0",
-    "husky": "^9.0.11",
+    "husky": "^8.0.0",
     "json-server": "^1.0.0-beta.1",
     "lint-staged": "^15.2.8",
     "mini-css-extract-plugin": "^2.9.0",
