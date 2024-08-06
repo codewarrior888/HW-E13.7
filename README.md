@@ -1,9 +1,9 @@
-# HW-E13.7
 Проверить, что установлены
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
 
 Клонировать репозиторий
+Создать новый репозитарий .git `git init`
 Установить зависимости: `npm install` 
 
  Запуск сборки `npm run start`
